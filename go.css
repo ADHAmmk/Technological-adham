@@ -185,6 +185,11 @@ gap: 20px;
         display: block;
     }
 
+    .navbar{
+    background: black;
+    z-index: 999;
+}
+
     #nav{
         display: none;
         flex-direction: column;
@@ -193,10 +198,15 @@ gap: 20px;
         align-items: center;
         top: 70px;
         right: 0;
-        width: 100%;
+        width: 90%;
         padding: 20px;
-        padding-left: 30px;
+        justify-content: center;
         text-align: center;
+    }
+
+    .cas {
+        width: 120px;
+        padding-left: 10px;
     }
 
     #nav.active{
