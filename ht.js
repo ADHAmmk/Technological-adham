@@ -24,3 +24,13 @@ console.log ("hi"+" adham");
 
 console.log (4+5+3+5+5+4);
 
+
+
+
+let nume = prompt ("من فضلك ادخل اسمك");
+
+let age = prompt ("ادخل عمرك");
+
+let sa = prompt  ("ادخل رقمك");
+
+console.log ("welcome " + nume + " your age " + age + " numper "+ sa);
