@@ -42,3 +42,16 @@ let nav = document.getElementById("nav");
 menu.onclick = function(){
     nav.classList.toggle("active");
 }
+
+
+function sendWhatsApp() {
+  let phone = "201013984024";
+  
+ 
+
+  let message = `ممكن حضرتك استفصر عن المواقع`;
+  
+  let url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+  
+  window.open(url, "_blank");
+}
