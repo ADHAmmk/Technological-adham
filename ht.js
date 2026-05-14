@@ -14,3 +14,13 @@ function sendWhatsApp6() {
   
   window.open(url, "_blank");
 }
+
+
+
+
+console.log ("hi");
+
+console.log ("hi"+" adham");
+
+console.log (4+5+3+5+5+4);
+
