@@ -170,3 +170,39 @@ gap: 20px;
     width: 250px;
     color: white;
 }
+
+.menu-toggle{
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* موبايل */
+@media(max-width:768px){
+
+    .menu-toggle{
+        display: block;
+    }
+
+    #nav{
+        display: none;
+        flex-direction: column;
+        background: black;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        padding: 20px;
+    }
+
+    #nav.active{
+        display: flex;
+    }
+
+    .f{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}

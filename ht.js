@@ -34,3 +34,11 @@ let age = prompt ("ادخل عمرك");
 let sa = prompt  ("ادخل رقمك");
 
 console.log ("welcome " + nume + " your age " + age + " numper "+ sa);
+
+
+let menu = document.getElementById("menu-toggle");
+let nav = document.getElementById("nav");
+
+menu.onclick = function(){
+    nav.classList.toggle("active");
+}
