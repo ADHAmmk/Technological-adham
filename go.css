@@ -190,10 +190,13 @@ gap: 20px;
         flex-direction: column;
         background: black;
         position: absolute;
+        align-items: center;
         top: 70px;
         right: 0;
         width: 100%;
         padding: 20px;
+        padding-left: 30px;
+        text-align: center;
     }
 
     #nav.active{
@@ -204,5 +207,11 @@ gap: 20px;
         display: flex;
         flex-direction: column;
         gap: 20px;
+        
     }
+ 
+    .features {
+        padding-right: 5px;
+    }
+
 }
