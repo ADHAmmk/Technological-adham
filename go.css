@@ -177,7 +177,23 @@ gap: 20px;
     color: white;
     cursor: pointer;
 }
+.trpo {
+    text-align: center;
+    /* padding-top: 10px; */
+    font-weight: 200;
+    color: blue;
+}
 
+.doi {
+     width: 430px;
+     height: 250px;
+     border-radius: 18px;
+     box-shadow: 0 2px 25px blue;
+}
+
+.er {
+    padding-top: 25px;
+}
 /* موبايل */
 @media(max-width:768px){
 
@@ -188,7 +204,15 @@ gap: 20px;
     .navbar{
     background: black;
     z-index: 999;
+    transition: all 0.9s ease-in-out; 
+    box-shadow: 0 5px 15px blue;
 }
+
+
+.trpo {
+    padding-top: 25px; 
+}
+
 
     #nav{
         display: none;
@@ -228,3 +252,4 @@ gap: 20px;
     }
 
 }
+
