@@ -189,10 +189,16 @@ gap: 20px;
      height: 250px;
      border-radius: 18px;
      box-shadow: 0 2px 25px blue;
+      display: block;
+    margin-bottom: 100px;
+     
 }
+
 
 .er {
     padding-top: 25px;
+  
+    
 }
 /* موبايل */
 @media(max-width:768px){
