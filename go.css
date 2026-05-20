@@ -210,8 +210,13 @@ gap: 20px;
 .dfg {
     color:blueviolet;
     text-decoration:underline;
+    transition: all  0.6s ease-in;
     
-    
+}
+
+.dfg:hover {
+    color: red;
+    transform: scale(1.05);
 }
 .qw {
     border-color: rgb(68, 68, 248);
@@ -257,7 +262,7 @@ gap: 20px;
     }
 
     .doi {
-        width: 350px;
+        width: 300px;
         height: 250px;
     }
 
