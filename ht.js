@@ -55,3 +55,15 @@ function sendWhatsApp() {
   
   window.open(url, "_blank");
 }
+
+function sendWhatsApp5() {
+  let phone = "201013984024";
+  
+ 
+
+  let message = `ممكن حضرتك استفصر عن المواقع`;
+  
+  let url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+  
+  window.open(url, "_blank");
+}

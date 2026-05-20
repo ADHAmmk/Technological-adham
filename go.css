@@ -227,6 +227,18 @@ gap: 20px;
 .yuy {
     border-color: rgb(68, 68, 248);
 }
+footer {
+    background: black;
+    height: 50px;
+    padding-top: 5px;
+}
+
+.fre {
+    
+  word-spacing: 4px;
+ height: 50px;
+padding-top: 10px;
+}
 /* موبايل */
 @media(max-width:768px){
 
@@ -263,7 +275,7 @@ gap: 20px;
 
     .doi {
         width: 300px;
-        height: 250px;
+        height: 230px;
     }
 
     .cas {
@@ -282,7 +294,9 @@ gap: 20px;
         
     }
 
- 
+    .fre {
+        box-shadow: 0 0 25px blue;
+    } 
  
     .features {
         padding-right: 5px;
