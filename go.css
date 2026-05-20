@@ -185,13 +185,19 @@ gap: 20px;
 }
 
 .doi {
-     width: 430px;
-     height: 250px;
-     border-radius: 18px;
+     width: 550px;
+     height: 350px;
+     border-radius: 15px;
      box-shadow: 0 2px 25px blue;
-      display: block;
-    margin-bottom: 100px;
+    display: block;
+     margin-bottom: 100px;
+     transition: transform  0.3s ease-in-out;
+     object-fit: cover;
      
+}
+
+.doi:hover {
+    transform: scale(1.05);
 }
 
 
@@ -199,6 +205,22 @@ gap: 20px;
     padding-top: 25px;
   
     
+}
+
+.dfg {
+    color:blueviolet;
+    text-decoration:underline;
+    
+    
+}
+.qw {
+    border-color: rgb(68, 68, 248);
+    
+    margin-top: 25px;
+}
+
+.yuy {
+    border-color: rgb(68, 68, 248);
 }
 /* موبايل */
 @media(max-width:768px){
@@ -232,6 +254,11 @@ gap: 20px;
         padding: 20px;
         justify-content: center;
         text-align: center;
+    }
+
+    .doi {
+        width: 350px;
+        height: 250px;
     }
 
     .cas {
