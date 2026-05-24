@@ -439,6 +439,9 @@ Don't show
         gap: 20px;
         
     }
+    .l {
+        gap: 12px;
+    }
 
     .box {
         width: 300px;
