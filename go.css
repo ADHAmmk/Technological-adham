@@ -293,6 +293,47 @@ footer {
     padding-top: 5px;
 }
 
+.vov {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #f5f0e8;
+    margin-bottom: 0.6rem;
+}
+
+.llk {
+ color: rgba(240, 238, 232, 0.48);
+ font-size: 0.93rem;
+ margin-bottom: 1.6rem;
+}
+
+.kok {
+    background: rgba(201, 168, 76, 0.07);
+    border-radius: 18px;
+    border: 0.5px solid rgba(201, 168, 76, 0.28);
+    padding: 3rem 2rem;
+    max-width: 855px;
+    margin: 1rem auto 3rem;
+    position: relative;
+    z-index: 1;
+}
+
+.jjh {
+    background: #c9a84c;
+    color: #0a0a0f;
+    font-size: 0.97rem;
+    font-weight: 700;
+    max-width: 140px;
+    border-radius: 8px;
+    padding: 0.85rem 2.2rem;
+    border: none;
+    transition: background 2s , transform 0.15s;
+}
+
+.jjh:hover {
+    transform: translateY(-4px);
+    background: #c9a84c;
+}
+
 .fre {
     
   word-spacing: 4px;
@@ -351,6 +392,14 @@ Don't show
 .trpo {
     padding-top: 25px; 
 }
+.kok {
+    max-width: 300px;
+    
+}
+
+.jjh {
+    min-width: 150px;
+}
 
 
     #nav{
@@ -388,6 +437,10 @@ Don't show
         flex-direction: column;
         gap: 20px;
         
+    }
+
+    .box {
+        width: 340px;
     }
 
    
