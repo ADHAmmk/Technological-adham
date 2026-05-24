@@ -322,11 +322,12 @@ footer {
     color: #0a0a0f;
     font-size: 0.97rem;
     font-weight: 700;
-    max-width: 140px;
+    max-width: 150px;
     border-radius: 8px;
     padding: 0.85rem 2.2rem;
     border: none;
     transition: background 2s , transform 0.15s;
+    box-shadow: 0 2px 15px #c9a84c;
 }
 
 .jjh:hover {
@@ -393,7 +394,7 @@ Don't show
     padding-top: 25px; 
 }
 .kok {
-    max-width: 300px;
+    max-width: 270px;
     
 }
 
