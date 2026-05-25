@@ -17,9 +17,13 @@ box-shadow: 0 5px 15px #c9a84c;
       background: rgba(10, 10, 15, 0.88);
   z-index: 9999;
   backdrop-filter: blur(10px); /* التغبيش */
+  
 }
 
-
+a:hover{
+    color: #c9a84c;
+    transform: scale(1.5);
+}
 
 body{
     margin: 0;
@@ -71,6 +75,7 @@ a {
     text-decoration: none;
     color: white;
     font-size: 17px;
+    transition: all 0.6s ease-in-out;
 }
 
 .cas {
@@ -288,9 +293,14 @@ gap: 20px;
     border-color: rgb(68, 68, 248);
 }
 footer {
-    background: black;
-    height: 50px;
-    padding-top: 5px;
+  text-align: center;
+  padding: 15px 24px;
+  border-top: 0.5px solid rgba(255, 255, 255, 0.07);
+  font-size: 0.8rem;
+  color: rgba(240, 238, 232, 0.28);
+      position: relative;
+      z-index: 1;
+      font-weight: 500;
 }
 
 .vov {
@@ -373,6 +383,8 @@ Don't show
     color: #f5f0e8;
     margin-bottom: 0.3rem;
 }
+
+
 
 .m {
         font-family: 'Tajawal', sans-serif;
