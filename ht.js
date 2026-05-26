@@ -67,3 +67,15 @@ function sendWhatsApp5() {
   
   window.open(url, "_blank");
 }
+
+function sendWhatsApp9() {
+  let phone = "201013984024";
+  
+ 
+
+  let message = `ممكن حضرتك احجز موقع `;
+  
+  let url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+  
+  window.open(url, "_blank");
+}
