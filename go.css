@@ -31,7 +31,8 @@ body{
     font-family: Arial, sans-serif;
     padding-top: 80px;
       color: #f0eee8;
-
+      transform: translateY(20px);
+      animation: fadeIn 1s ease forwards;
     min-height: 100vh;
      background-color: #0a0a0f;
   background-image:
@@ -43,6 +44,17 @@ body{
   font-weight: 600;
 
  
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 h1 {
