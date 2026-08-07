@@ -70,10 +70,10 @@ function sendWhatsApp5() {
 
 function sendWhatsApp9() {
   let phone = "201013984024";
-  
+  let ver = prompt ("من فضلك اكتب اسمك كاملا    هام جدا")
  
 
-  let message = `ممكن حضرتك احجز موقع `;
+  let message = `ممكن حضرتك احجز موقع انا اسمي ${ver}`;
   
   let url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
   
