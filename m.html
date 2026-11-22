@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,17 @@
   <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Tajawal:wght@400;700;900&display=swap"
+    rel="stylesheet">
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
     :root {
       --bg: #0b0f1a;
@@ -21,13 +30,15 @@
       --gold: #f59e0b;
       --text: #f1f5f9;
       --muted: #94a3b8;
-      --border: rgba(255,255,255,0.08);
-      --card-bg: rgba(255,255,255,0.04);
+      --border: rgba(255, 255, 255, 0.08);
+      --card-bg: rgba(255, 255, 255, 0.04);
       --radius: 16px;
       --font: 'Cairo', 'Tajawal', sans-serif;
     }
 
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       background: var(--bg);
@@ -48,22 +59,25 @@
       justify-content: space-between;
       padding: 0 2rem;
       height: 64px;
-      background: rgba(11,15,26,0.85);
+      background: rgba(11, 15, 26, 0.85);
       backdrop-filter: blur(16px);
       border-bottom: 1px solid var(--border);
     }
+
     .nav-logo {
       font-size: 1.25rem;
       font-weight: 900;
       color: var(--accent2);
       letter-spacing: -0.5px;
     }
+
     .nav-links {
       display: flex;
       align-items: center;
       gap: 0.25rem;
       list-style: none;
     }
+
     .nav-links a {
       color: var(--muted);
       text-decoration: none;
@@ -72,7 +86,12 @@
       border-radius: 8px;
       transition: color 0.2s, background 0.2s;
     }
-    .nav-links a:hover { color: var(--text); background: var(--card-bg); }
+
+    .nav-links a:hover {
+      color: var(--text);
+      background: var(--card-bg);
+    }
+
     .nav-cta {
       background: var(--accent);
       color: #fff !important;
@@ -82,7 +101,11 @@
       cursor: pointer;
       transition: background 0.2s, transform 0.1s !important;
     }
-    .nav-cta:hover { background: var(--accent2) !important; transform: translateY(-1px); }
+
+    .nav-cta:hover {
+      background: var(--accent2) !important;
+      transform: translateY(-1px);
+    }
 
     .menu-toggle {
       display: none;
@@ -92,7 +115,10 @@
       padding: 4px 8px;
       border-radius: 6px;
     }
-    .menu-toggle:hover { background: var(--card-bg); }
+
+    .menu-toggle:hover {
+      background: var(--card-bg);
+    }
 
     /* ── HERO ── */
     .hero {
@@ -101,18 +127,20 @@
       position: relative;
       overflow: hidden;
     }
+
     .hero::before {
       content: '';
       position: absolute;
       inset: 0;
-      background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(59,130,246,0.15) 0%, transparent 70%);
+      background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
       pointer-events: none;
     }
+
     .hero-tag {
       display: inline-block;
-      background: rgba(59,130,246,0.15);
+      background: rgba(59, 130, 246, 0.15);
       color: var(--accent2);
-      border: 1px solid rgba(59,130,246,0.3);
+      border: 1px solid rgba(59, 130, 246, 0.3);
       font-size: 0.85rem;
       font-weight: 600;
       padding: 4px 16px;
@@ -120,6 +148,7 @@
       margin-bottom: 1.5rem;
       letter-spacing: 0.5px;
     }
+
     .hero h1 {
       font-size: clamp(2rem, 5vw, 3.5rem);
       font-weight: 900;
@@ -129,6 +158,7 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+
     .hero p {
       color: var(--muted);
       font-size: 1.05rem;
@@ -147,12 +177,14 @@
       margin-left: auto;
       margin-right: auto;
     }
+
     .section-divider h2 {
       font-size: 1.4rem;
       font-weight: 700;
       white-space: nowrap;
       color: var(--text);
     }
+
     .section-divider::after {
       content: '';
       flex: 1;
@@ -169,6 +201,7 @@
       margin: 0 auto;
       padding: 0 2rem 4rem;
     }
+
     .project-card {
       background: var(--card-bg);
       border: 1px solid var(--border);
@@ -176,11 +209,13 @@
       overflow: hidden;
       transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s;
     }
+
     .project-card:hover {
       transform: translateY(-4px);
-      border-color: rgba(59,130,246,0.35);
-      box-shadow: 0 16px 48px rgba(59,130,246,0.1);
+      border-color: rgba(59, 130, 246, 0.35);
+      box-shadow: 0 16px 48px rgba(59, 130, 246, 0.1);
     }
+
     .project-images {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -189,6 +224,7 @@
       /* max-height: 220px; */
       overflow: hidden;
     }
+
     .project-images img {
       width: 100%;
       height: 110px;
@@ -196,32 +232,40 @@
       display: block;
       transition: transform 0.4s;
     }
+
     .project-images img:first-child:last-child,
     .project-images img:first-child:nth-last-child(3) {
       grid-column: 1 / -1;
       height: 160px;
     }
-    .project-card:hover .project-images img { transform: scale(1.04); }
+
+    .project-card:hover .project-images img {
+      transform: scale(1.04);
+    }
+
     .project-info {
       padding: 1.25rem 1.5rem 1.5rem;
     }
+
     .project-tag {
       display: inline-block;
       font-size: 0.75rem;
       font-weight: 600;
       color: var(--accent2);
-      background: rgba(59,130,246,0.12);
-      border: 1px solid rgba(59,130,246,0.2);
+      background: rgba(59, 130, 246, 0.12);
+      border: 1px solid rgba(59, 130, 246, 0.2);
       border-radius: 999px;
       padding: 2px 10px;
       margin-bottom: 0.6rem;
     }
+
     .project-info h3 {
       font-size: 1.1rem;
       font-weight: 700;
       margin-bottom: 1rem;
       color: var(--text);
     }
+
     .project-link {
       display: inline-flex;
       align-items: center;
@@ -235,8 +279,16 @@
       border-radius: 8px;
       transition: background 0.2s, transform 0.15s;
     }
-    .project-link:hover { background: var(--accent2); transform: translateY(-1px); }
-    .project-link svg { width: 14px; height: 14px; }
+
+    .project-link:hover {
+      background: var(--accent2);
+      transform: translateY(-1px);
+    }
+
+    .project-link svg {
+      width: 14px;
+      height: 14px;
+    }
 
     /* ── FOOTER ── */
     footer {
@@ -245,21 +297,25 @@
       padding: 3rem 2rem;
       text-align: center;
     }
+
     .footer-inner {
       max-width: 700px;
       margin: 0 auto;
     }
+
     .footer-inner h3 {
       font-size: 1.3rem;
       font-weight: 700;
       margin-bottom: 0.5rem;
       color: var(--text);
     }
+
     .footer-inner p {
       color: var(--muted);
       font-size: 0.95rem;
       margin-bottom: 1.5rem;
     }
+
     .footer-contact {
       display: flex;
       gap: 0.75rem;
@@ -267,6 +323,7 @@
       flex-wrap: wrap;
       margin-bottom: 2rem;
     }
+
     .footer-contact a {
       display: inline-flex;
       align-items: center;
@@ -279,30 +336,77 @@
       border: 1px solid var(--border);
       transition: color 0.2s, border-color 0.2s, background 0.2s;
     }
+
     .footer-contact a:hover {
       color: var(--text);
-      border-color: rgba(255,255,255,0.2);
+      border-color: rgba(255, 255, 255, 0.2);
       background: var(--card-bg);
     }
+
     .footer-credit {
       color: var(--muted);
       font-size: 0.8rem;
       opacity: 0.6;
     }
-    .footer-credit a { color: var(--accent2); text-decoration: none; }
+
+    .footer-credit a {
+      color: var(--accent2);
+      text-decoration: none;
+    }
 
     /* ── MOBILE ── */
     @media (max-width: 640px) {
-      nav { padding: 0 1rem; }
-      .nav-links { display: none; flex-direction: column; gap: 0; position: absolute; top: 64px; right: 0; left: 0; background: var(--bg2); border-bottom: 1px solid var(--border); padding: 0.5rem; }
-      .nav-links.open { display: flex; }
-      .nav-links li { width: 100%; }
-      .nav-links a { display: block; padding: 10px 16px; border-radius: 8px; }
-      .menu-toggle { display: block; }
-      .hero { padding: 4rem 1.25rem 3rem; }
-      .projects-grid { padding: 0 1.25rem 3rem; gap: 1.25rem; }
-      .section-divider { padding: 0 1.25rem; }
-      footer { padding: 2rem 1.25rem; }
+      nav {
+        padding: 0 1rem;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        position: absolute;
+        top: 64px;
+        right: 0;
+        left: 0;
+        background: var(--bg2);
+        border-bottom: 1px solid var(--border);
+        padding: 0.5rem;
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .nav-links li {
+        width: 100%;
+      }
+
+      .nav-links a {
+        display: block;
+        padding: 10px 16px;
+        border-radius: 8px;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .hero {
+        padding: 4rem 1.25rem 3rem;
+      }
+
+      .projects-grid {
+        padding: 0 1.25rem 3rem;
+        gap: 1.25rem;
+      }
+
+      .section-divider {
+        padding: 0 1.25rem;
+      }
+
+      footer {
+        padding: 2rem 1.25rem;
+      }
     }
 
     /* ── LIGHTBOX ── */
@@ -311,25 +415,38 @@
       position: fixed;
       inset: 0;
       z-index: 999;
-      background: rgba(0,0,0,0.92);
+      background: rgba(0, 0, 0, 0.92);
       align-items: center;
       justify-content: center;
       cursor: zoom-out;
       padding: 1rem;
     }
-    .lightbox.active { display: flex; }
+
+    .lightbox.active {
+      display: flex;
+    }
+
     .lightbox img {
       max-width: min(92vw, 1000px);
       max-height: 90vh;
       object-fit: contain;
       border-radius: 12px;
-      box-shadow: 0 32px 80px rgba(0,0,0,0.6);
+      box-shadow: 0 32px 80px rgba(0, 0, 0, 0.6);
       animation: lbIn 0.22s ease both;
     }
+
     @keyframes lbIn {
-      from { opacity: 0; transform: scale(0.93); }
-      to   { opacity: 1; transform: scale(1); }
+      from {
+        opacity: 0;
+        transform: scale(0.93);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
     }
+
     .lb-close {
       position: fixed;
       top: 1rem;
@@ -337,8 +454,8 @@
       width: 40px;
       height: 40px;
       border-radius: 50%;
-      background: rgba(255,255,255,0.1);
-      border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
       color: #fff;
       font-size: 1.2rem;
       display: flex;
@@ -347,7 +464,11 @@
       cursor: pointer;
       transition: background 0.15s;
     }
-    .lb-close:hover { background: rgba(255,255,255,0.2); }
+
+    .lb-close:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
     .lb-nav {
       position: fixed;
       top: 50%;
@@ -355,8 +476,8 @@
       width: 44px;
       height: 44px;
       border-radius: 50%;
-      background: rgba(255,255,255,0.1);
-      border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
       color: #fff;
       font-size: 1.2rem;
       display: flex;
@@ -366,221 +487,268 @@
       transition: background 0.15s;
       user-select: none;
     }
-    .lb-nav:hover { background: rgba(255,255,255,0.2); }
-    .lb-prev { right: 1rem; }
-    .lb-next { left: 1rem; }
+
+    .lb-nav:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .lb-prev {
+      right: 1rem;
+    }
+
+    .lb-next {
+      left: 1rem;
+    }
+
     .lb-counter {
       position: fixed;
       bottom: 1.25rem;
       left: 50%;
       transform: translateX(-50%);
-      color: rgba(255,255,255,0.5);
+      color: rgba(255, 255, 255, 0.5);
       font-size: 0.85rem;
       font-family: var(--font);
     }
-    .project-images img { cursor: zoom-in; }
+
+    .project-images img {
+      cursor: zoom-in;
+    }
 
     /* ── ANIMATIONS ── */
     @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(24px); }
-      to   { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(24px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
-    .hero-tag  { animation: fadeUp 0.5s ease both; }
-    .hero h1   { animation: fadeUp 0.55s 0.1s ease both; }
-    .hero p    { animation: fadeUp 0.55s 0.2s ease both; }
-    .project-card:nth-child(1) { animation: fadeUp 0.5s 0.1s ease both; }
-    .project-card:nth-child(2) { animation: fadeUp 0.5s 0.2s ease both; }
-    .project-card:nth-child(3) { animation: fadeUp 0.5s 0.3s ease both; }
+
+    .hero-tag {
+      animation: fadeUp 0.5s ease both;
+    }
+
+    .hero h1 {
+      animation: fadeUp 0.55s 0.1s ease both;
+    }
+
+    .hero p {
+      animation: fadeUp 0.55s 0.2s ease both;
+    }
+
+    .project-card:nth-child(1) {
+      animation: fadeUp 0.5s 0.1s ease both;
+    }
+
+    .project-card:nth-child(2) {
+      animation: fadeUp 0.5s 0.2s ease both;
+    }
+
+    .project-card:nth-child(3) {
+      animation: fadeUp 0.5s 0.3s ease both;
+    }
   </style>
 </head>
+
 <body>
 
-<nav>
-  <span class="nav-logo">✦ Adham</span>
-  <ul class="nav-links" id="nav">
-    <li><a href="#projects" id="qwer">أعمالنا</a></li>
-    <li><a href="https://www.gcschool.tech/" target="_blank">خدماتنا</a></li>
-    <li><a href="index.html">الرئيسية</a></li>
-    <li><a href="#contact">تواصل معنا</a></li>
-    <li onclick="sendWhatsApp6()" style="cursor:pointer;"><a class="nav-cta" href="#">اطلب الآن</a></li>
-  </ul>
-  <div class="menu-toggle" id="menu-toggle">☰</div>
-</nav>
+  <nav>
+    <span class="nav-logo">✦ Adham</span>
+    <ul class="nav-links" id="nav">
+      <li><a href="#projects" id="qwer">أعمالنا</a></li>
+      <li><a href="https://www.gcschool.tech/" target="_blank">خدماتنا</a></li>
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="#contact">تواصل معنا</a></li>
+      <li onclick="sendWhatsApp6()" style="cursor:pointer;"><a class="nav-cta" href="#">اطلب الآن</a></li>
+    </ul>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+  </nav>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-tag">معرض الأعمال</div>
-  <h1>من أعمالنا<br>لتصميم المواقع</h1>
-  <p>نصمّم مواقع احترافية تعكس هويتك وتحقق أهدافك — تصميم متميز وأداء عالٍ</p>
-</section>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-tag">معرض الأعمال</div>
+    <h1>من أعمالنا<br>لتصميم المواقع</h1>
+    <p>نصمّم مواقع احترافية تعكس هويتك وتحقق أهدافك — تصميم متميز وأداء عالٍ</p>
+  </section>
 
-<!-- PROJECTS -->
-<div class="section-divider" id="projects">
-  <h2>المشاريع المُنجزة</h2>
-</div>
-
-<div class="projects-grid">
-
-  <!-- Project 1 -->
-  <div class="project-card">
-    <div class="project-images">
-      <img src="Screenshot 2026-05-18 142209.png" alt="مدرسة السادات">
-      <img src="Screenshot 2026-05-18 142233.png" alt="مدرسة السادات">
-      <img src="Screenshot 2026-05-18 142255.png" alt="مدرسة السادات">
-    </div>
-    <div class="project-info">
-      <span class="project-tag">تعليم</span>
-      <h3>موقع مدرسة السادات بنين</h3>
-      <a class="project-link" href="https://el-sadat-school.vercel.app/" target="_blank">
-        زيارة الموقع
-        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
-      </a>
-    </div>
+  <!-- PROJECTS -->
+  <div class="section-divider" id="projects">
+    <h2>المشاريع المُنجزة</h2>
   </div>
 
-  <!-- Project 2 -->
-  <div class="project-card">
-    <div class="project-images">
-      <img src="Screenshot 2026-05-18 142635.png" alt="شركة iPhone">
-      <img src="Screenshot 2026-05-18 142654.png" alt="شركة iPhone">
-      <img src="Screenshot 2026-05-18 142712.png" alt="شركة iPhone">
+  <div class="projects-grid">
+
+    <!-- Project 1 -->
+    <div class="project-card">
+      <div class="project-images">
+        <img src="Screenshot 2026-05-18 142209.png" alt="مدرسة السادات">
+        <img src="Screenshot 2026-05-18 142233.png" alt="مدرسة السادات">
+        <img src="Screenshot 2026-05-18 142255.png" alt="مدرسة السادات">
+      </div>
+      <div class="project-info">
+        <span class="project-tag">تعليم</span>
+        <h3>موقع مدرسة السادات بنين</h3>
+        <a class="project-link" href="https://el-sadat-school.vercel.app/" target="_blank">
+          زيارة الموقع
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 8h10M9 4l4 4-4 4" />
+          </svg>
+        </a>
+      </div>
     </div>
-    <div class="project-info">
-      <span class="project-tag">تقنية</span>
-      <h3>موقع شركة iPhone Apple</h3>
-      <a class="project-link" href="https://i-phone-apple.vercel.app/" target="_blank">
-        زيارة الموقع
-        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
-      </a>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <div class="project-images">
+        <img src="Screenshot 2026-05-18 142635.png" alt="شركة iPhone">
+        <img src="Screenshot 2026-05-18 142654.png" alt="شركة iPhone">
+        <img src="Screenshot 2026-05-18 142712.png" alt="شركة iPhone">
+      </div>
+      <div class="project-info">
+        <span class="project-tag">تقنية</span>
+        <h3>موقع شركة iPhone Apple</h3>
+        <a class="project-link" href="https://i-phone-apple.vercel.app/" target="_blank">
+          زيارة الموقع
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 8h10M9 4l4 4-4 4" />
+          </svg>
+        </a>
+      </div>
     </div>
+
+    <!-- Project 3 -->
+    <div class="project-card">
+      <div class="project-images">
+        <img src="Screenshot 2026-05-18 142606.png" alt="متجر شحن ببجي">
+        <img src="Screenshot 2026-05-18 142522.png" alt="متجر شحن ببجي">
+        <img src="Screenshot 2026-05-18 142456.png" alt="متجر شحن ببجي">
+      </div>
+      <div class="project-info">
+        <span class="project-tag">متجر إلكتروني</span>
+        <h3>موقع متجر شحن ببجي</h3>
+        <a class="project-link" href="https://el-bakre-store.vercel.app/" target="_blank">
+          زيارة الموقع
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 8h10M9 4l4 4-4 4" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
   </div>
 
-  <!-- Project 3 -->
-  <div class="project-card">
-    <div class="project-images">
-      <img src="Screenshot 2026-05-18 142606.png" alt="متجر شحن ببجي">
-      <img src="Screenshot 2026-05-18 142522.png" alt="متجر شحن ببجي">
-      <img src="Screenshot 2026-05-18 142456.png" alt="متجر شحن ببجي">
+  <!-- FOOTER -->
+  <footer id="contact">
+    <div class="footer-inner">
+      <h3>تواصل معنا</h3>
+      <p>محافظة الدقهلية — تصميم برمجي احترافي بإشراف أكاديمية <a href="https://www.gcschool.tech/"
+          style="color:var(--accent2);text-decoration:none;">GC School</a></p>
+      <div class="footer-contact">
+        <a href="https://www.google.com/search?q=قرية+ديو+الوسطى+مركز+السنبلاوين" target="_blank">
+          📍 ديو الوسطى
+        </a>
+        <a onclick="sendWhatsApp5()" style="cursor:pointer;">
+          📱 201013984024
+        </a>
+        <a href="https://www.gcschool.tech/" target="_blank">
+          🌐 GC School
+        </a>
+      </div>
+      <p class="footer-credit">© 2026 Adham — تصميم بواسطة <a href="https://www.gcschool.tech/">GC School</a></p>
     </div>
-    <div class="project-info">
-      <span class="project-tag">متجر إلكتروني</span>
-      <h3>موقع متجر شحن ببجي</h3>
-      <a class="project-link" href="https://el-bakre-store.vercel.app/" target="_blank">
-        زيارة الموقع
-        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
-      </a>
-    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <div class="lb-close" id="lb-close">✕</div>
+    <span class="lb-nav lb-prev" id="lb-prev">›</span>
+    <img id="lb-img" src="" alt="">
+    <span class="lb-nav lb-next" id="lb-next">‹</span>
+    <div class="lb-counter" id="lb-counter"></div>
   </div>
 
-</div>
 
-<!-- FOOTER -->
-<footer id="contact">
-  <div class="footer-inner">
-    <h3>تواصل معنا</h3>
-    <p>محافظة الدقهلية — تصميم برمجي احترافي بإشراف أكاديمية <a href="https://www.gcschool.tech/" style="color:var(--accent2);text-decoration:none;">GC School</a></p>
-    <div class="footer-contact">
-      <a href="https://www.google.com/search?q=قرية+ديو+الوسطى+مركز+السنبلاوين" target="_blank">
-        📍 ديو الوسطى
-      </a>
-      <a onclick="sendWhatsApp5()" style="cursor:pointer;">
-        📱 201013984024
-      </a>
-      <a href="https://www.gcschool.tech/" target="_blank">
-        🌐 GC School
-      </a>
-    </div>
-    <p class="footer-credit">© 2026 Adham — تصميم بواسطة <a href="https://www.gcschool.tech/">GC School</a></p>
-  </div>
-</footer>
+  <script>
+    // ── NAV TOGGLE ──
+    const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+      toggle.textContent = nav.classList.contains('open') ? '✕' : '☰';
+    });
+    nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      nav.classList.remove('open');
+      toggle.textContent = '☰';
+    }));
 
-<!-- LIGHTBOX -->
-<div class="lightbox" id="lightbox">
-  <div class="lb-close" id="lb-close">✕</div>
-  <span class="lb-nav lb-prev" id="lb-prev">›</span>
-  <img id="lb-img" src="" alt="">
-  <span class="lb-nav lb-next" id="lb-next">‹</span>
-  <div class="lb-counter" id="lb-counter"></div>
-</div>
+    // ── LIGHTBOX ──
+    let allImgs = [];
+    let currentIdx = 0;
+
+    document.querySelectorAll('.project-images img').forEach(img => {
+      allImgs.push(img.src);
+      img.addEventListener('click', () => openLb(allImgs.indexOf(img.src)));
+    });
+
+    const lb = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lb-img');
+    const lbCnt = document.getElementById('lb-counter');
+
+    function openLb(idx) {
+      currentIdx = idx;
+      lbImg.src = allImgs[idx];
+      lbCnt.textContent = (idx + 1) + ' / ' + allImgs.length;
+      lb.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLb() {
+      lb.classList.remove('active');
+      document.body.style.overflow = '';
+      lbImg.src = '';
+    }
+    function showNext() { openLb((currentIdx + 1) % allImgs.length); }
+    function showPrev() { openLb((currentIdx - 1 + allImgs.length) % allImgs.length); }
+
+    document.getElementById('lb-close').addEventListener('click', e => { e.stopPropagation(); closeLb(); });
+    document.getElementById('lb-next').addEventListener('click', e => { e.stopPropagation(); showNext(); });
+    document.getElementById('lb-prev').addEventListener('click', e => { e.stopPropagation(); showPrev(); });
+    lb.addEventListener('click', closeLb);
+    lbImg.addEventListener('click', e => e.stopPropagation());
+
+    document.addEventListener('keydown', e => {
+      if (!lb.classList.contains('active')) return;
+      if (e.key === 'Escape') closeLb();
+      if (e.key === 'ArrowLeft') showNext();
+      if (e.key === 'ArrowRight') showPrev();
+    });
+
+    function sendWhatsApp6() {
+      let phone = "201013984024";
 
 
-<script>
-  // ── NAV TOGGLE ──
-  const toggle = document.getElementById('menu-toggle');
-  const nav = document.getElementById('nav');
-  toggle.addEventListener('click', () => {
-    nav.classList.toggle('open');
-    toggle.textContent = nav.classList.contains('open') ? '✕' : '☰';
-  });
-  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-    nav.classList.remove('open');
-    toggle.textContent = '☰';
-  }));
 
-  // ── LIGHTBOX ──
-  let allImgs = [];
-  let currentIdx = 0;
+      let message = `ممكن حضرتك استفصر عن المواقع`;
 
-  document.querySelectorAll('.project-images img').forEach(img => {
-    allImgs.push(img.src);
-    img.addEventListener('click', () => openLb(allImgs.indexOf(img.src)));
-  });
+      let url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
-  const lb     = document.getElementById('lightbox');
-  const lbImg  = document.getElementById('lb-img');
-  const lbCnt  = document.getElementById('lb-counter');
+      window.open(url, "_blank");
+    }
 
-  function openLb(idx) {
-    currentIdx = idx;
-    lbImg.src = allImgs[idx];
-    lbCnt.textContent = (idx + 1) + ' / ' + allImgs.length;
-    lb.classList.add('active');
-    document.body.style.overflow = 'hidden';
-  }
-  function closeLb() {
-    lb.classList.remove('active');
-    document.body.style.overflow = '';
-    lbImg.src = '';
-  }
-  function showNext() { openLb((currentIdx + 1) % allImgs.length); }
-  function showPrev() { openLb((currentIdx - 1 + allImgs.length) % allImgs.length); }
+    function sendWhatsApp5() {
+      let phone = "201013984024";
 
-  document.getElementById('lb-close').addEventListener('click', e => { e.stopPropagation(); closeLb(); });
-  document.getElementById('lb-next').addEventListener('click', e => { e.stopPropagation(); showNext(); });
-  document.getElementById('lb-prev').addEventListener('click', e => { e.stopPropagation(); showPrev(); });
-  lb.addEventListener('click', closeLb);
-  lbImg.addEventListener('click', e => e.stopPropagation());
 
-  document.addEventListener('keydown', e => {
-    if (!lb.classList.contains('active')) return;
-    if (e.key === 'Escape') closeLb();
-    if (e.key === 'ArrowLeft') showNext();
-    if (e.key === 'ArrowRight') showPrev();
-  });
 
-  function sendWhatsApp6() {
-  let phone = "201013984024";
-  
- 
+      let message = `ممكن حضرتك استفصر عن المواقع`;
 
-  let message = `ممكن حضرتك استفصر عن المواقع`;
-  
-  let url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
-  
-  window.open(url, "_blank");
-}
+      let url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
-function sendWhatsApp5() {
-  let phone = "201013984024";
-  
- 
-
-  let message = `ممكن حضرتك استفصر عن المواقع`;
-  
-  let url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
-  
-  window.open(url, "_blank");
-}
-</script>
+      window.open(url, "_blank");
+    }
+  </script>
 </body>
+
 </html>

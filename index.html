@@ -1,102 +1,848 @@
-
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="_aU5YYXmU2YvGy8Y7TqDUoqO58o-6gWKZ0hLddtIbnk" />
-    <title>أدهم لانشاء المواقع</title>
-<meta name="description" content="أدهم لإنشاء المواقع - تصميم وتطوير مواقع إلكترونية احترافية سريعة ومتجاوبة مع جميع الأجهزة.">
-<meta name="keywords" content="أدهم, إنشاء مواقع, تصميم مواقع, مواقع إلكترونية, Adham">
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <title>أدهم للحلول الرقمية | تصميم وتطوير المواقع الإلكترونية الاحترافية</title>
+    <meta name="description"
+        content="أدهم لإنشاء وتطوير المواقع الإلكترونية - تصميم وبرمجة مواقع حديثة، فائقة السرعة ومتجاوبة مع جميع الأجهزة ومُهيأة لمحركات البحث SEO بأعلى معايير الجودة.">
+    <meta name="keywords"
+        content="أدهم, إنشاء مواقع, تصميم مواقع, مواقع إلكترونية, تطوير ويب, متاجر إلكترونية, Adham, Web Design Egypt">
+    <meta name="theme-color" content="#080b12">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Favicon -->
     <link rel="shortcut icon" href="download.jpg" type="image/x-icon">
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="go.css">
 </head>
+
 <body>
+
+    <!-- Background Ambient Effects -->
+    <div class="bg-grid-pattern"></div>
+    <div class="ambient-glow-top"></div>
+    <div class="ambient-glow-right"></div>
+
+    <!-- Header / Navbar -->
     <header>
-    <nav class="navbar">
-    <h2>⬡ Adham</h2>
+        <div class="nav-container">
+            <a href="#hero" class="brand-logo">
+                <div class="logo-icon"><img style="width: 100px; height: 100%; border-radius: 13px; object-fit: contain;" src="Adham web.png" alt="شعار Adham"></div>
+                <div class="logo-text">
+                    <span class="logo-title">Adham</span>
+                    <span class="logo-sub">لتطوير المواقع الإلكترونية</span>
+                </div>
+            </a>
 
-<div class="menu-toggle" id="menu-toggle">
-☰
-</div>
+            <div class="menu-toggle" id="menu-toggle" aria-label="القائمة" aria-expanded="false">
+                ☰
+            </div>
 
-     <ul id="nav">
-        <div class="f">
-        <li><a href="#u">تواصل معنا</a></li>
-        <li><a href="m.html">من اعمالنا</a></li>
-     <li><a href="https://www.gcschool.tech/">خدمتنا</a></li>
-     <li><a href="#we" >الرئيسيه</a></li>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#hero">الرئيسية</a></li>
+                <li><a href="#features">لماذا نحن؟</a></li>
+                <li><a href="#services">خدماتنا</a></li>
+                <li><a href="#portfolio">أعمالنا</a></li>
+                <li><a href="#process">كيف نعمل</a></li>
+                <li><a href="#reviews">آراء العملاء</a></li>
+                <li><a href="#faq">الأسئلة الشائعة</a></li>
+                <li>
+                    <button class="nav-cta-btn" onclick="sendWhatsApp6()">
+                        <span>اطلب موقعك الآن</span>
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-status-pill">
+                        <span class="status-dot"></span>
+                        <span>متاح لاستقبال المشاريع الجديدة · استشارة مجانية</span>
+                    </div>
+
+                    <h1>
+                        نحوّل أفكارك إلى
+                        <br>
+                        <span class="gold-gradient-text">مواقع رقمية استثنائية</span>
+                        تخطف الأنظار
+                    </h1>
+
+                    <p class="hero-desc">
+                        نصمم ونطور مواقع ويب عصرية فائقة السرعة، متوافقة 100% مع الهواتف ومحركات البحث (SEO)،
+                        بأحدث التقنيات وأفضل الأسعار لتعكس هوية علامتك التجارية وتضاعف مبيعاتك.
+                    </p>
+
+                    <div class="hero-actions">
+                        <button class="btn btn-primary" onclick="sendWhatsApp6()">
+                            <i class="fa-solid fa-rocket rocket-icon-black"></i>
+                            <span>ابدأ مشروعك الآن</span>
+                        </button>
+                        <a href="#portfolio" class="btn btn-outline">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                <polyline points="21 15 16 10 5 21"></polyline>
+                            </svg>
+                            <span>شاهد سابقة الأعمال</span>
+                        </a>
+                    </div>
+
+                    <!-- Key Stats Strip -->
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-num">+15</div>
+                            <div class="stat-label">مشروع ناجح ومُطلق</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-num">99.9%</div>
+                            <div class="stat-label">سرعة وأداء قياسي</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-num">100%</div>
+                            <div class="stat-label">تجاوب تام مع الهواتف</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-num">24/7</div>
+                            <div class="stat-label">دعم فني ومتابعة دورية</div>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Browser Mockup Showcase -->
+                    <div class="hero-mockup-wrapper">
+                        <div class="mockup-window">
+                            <div class="mockup-header">
+                                <div class="mockup-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="mockup-search-bar">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                    </svg>
+                                    <span>https://adham.dev/your-website</span>
+                                </div>
+                                <div style="width: 40px;"></div>
+                            </div>
+                            <div class="mockup-body">
+                                <div class="mockup-preview-code">
+                                    <div><span class="code-keyword">const</span> <span class="code-fn">website</span> = {</div>
+                                    <div>&nbsp;&nbsp;client: <span class="code-str">"Your Dream Project"</span>,</div>
+                                    <div>&nbsp;&nbsp;speed: <span class="code-gold">"Ultra Fast 100/100"</span>,</div>
+                                    <div>&nbsp;&nbsp;responsive: <span class="code-keyword">true</span>,</div>
+                                    <div>&nbsp;&nbsp;status: <span class="code-str">"Ready To Launch 🚀"</span></div>
+                                    <div>};</div>
+                                    <div style="margin-top: 8px;"><span class="code-fn">AdhamDev</span>.<span class="code-keyword">buildMasterpiece</span>(website);</div>
+                                </div>
+                                <div class="mockup-preview-card">
+                                    <span class="mockup-badge">تجربة مستخدم حية</span>
+                                    <h4>تصميم أنيق · برمجة نظيفة</h4>
+                                    <p>كود برمجي متطور يضمن لموقعك أعلى درجات الحماية وتصدر نتائج البحث الأولى.</p>
+                                    <div class="mockup-metrics">
+                                        <div class="metric-pill">
+                                            <span>⚡</span>
+                                            <span>Google Score: 99</span>
+                                        </div>
+                                        <div class="metric-pill">
+                                            <span>📱</span>
+                                            <span>Mobile First</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="features-section" id="features">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag">
+                        <span class="dot"></span>
+                        <span>لماذا تختار أدهم؟</span>
+                    </div>
+                    <h2 class="section-title">مزايا تمنح مشروعك الأفضلية والتميز</h2>
+                    <p class="section-subtitle">
+                        نحرص في كل موقع نصنعه على الجمع بين الجمال البصري الفائق والسرعة الاستثنائية وسهولة الاستخدام.
+                    </p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon-box">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <h3>سرعة وأداء فائق</h3>
+                        <p>مواقع سريعة التحميل وخفيفة الوزن لتحسين تجربة المستخدم وتقليل معدل الارتداد لأدنى درجة.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon-box">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+                        <h3>تجاوب تام مع كافة الشاشات</h3>
+                        <p>تصميم انسيابي يتكيف تلقائياً مع الهواتف الذكية، الأجهزة اللوحية، والشاشات الكبيرة بدقة متناهية.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon-box">
+                            <i class="fa-solid fa-palette"></i>
+                        </div>
+                        <h3>واجهات مخصصة وعصرية</h3>
+                        <p>تصاميم فريدة تعكس هويتك البصرية وتترك انطباعاً راقياً لدى عملائك من أول ثانية.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon-box">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <h3>تهيئة محركات البحث (SEO)</h3>
+                        <p>بنية كود نظيفة ومُهيأة لمعايير جوجل لضمان ظهور موقعك في الصفحات الأولى لمحركات البحث.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon-box">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h3>أمان وحماية متقدمة</h3>
+                        <p>شهادات أمان SSL وتشفير كامل للبيانات مع حماية ضد محاولات الاختراق والثغرات الشائعة.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon-box">
+                            <i class="fa-solid fa-handshake"></i>
+                        </div>
+                        <h3>دعم فني وتدريب مستمر</h3>
+                        <p>نقف بجانبك خطوة بخطوة بعد الإطلاق مع إمكانية التحديث والتطوير المستمر متى احتجت.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag">
+                        <span class="dot"></span>
+                        <span>خدماتنا البرمجية</span>
+                    </div>
+                    <h2 class="section-title">حلول رقمية متكاملة لنمو أعمالك</h2>
+                    <p class="section-subtitle">
+                        سواء كنت تبدأ نشاطاً تجارياً جديداً أو ترغب في تطوير موقعك الحالي، نقدم لك الحل الأمثل.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card">
+                        <div>
+                            <span class="service-badge">للشركات والمؤسسات</span>
+                            <h3 class="service-title">مواقع الشركات والأعمال</h3>
+                            <p class="service-desc">
+                                موقع تعريفي رسمي واحترافي يعرض خدماتك، مشاريعك، وسابقة أعمالك بأسلوب جذاب ومقنع لجمهورك المستهدف.
+                            </p>
+                            <ul class="service-features-list">
+                                <li>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span>تصميم مخصص يعبر عن هوية الشركة</span>
+                                </li>
+                                <li>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span>صفحات متعددة (من نحن، الخدمات، تواصل معنا)</span>
+                                </li>
+                                <li>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span>ربط مباشر بوسائل التواصل ونماذج المراسلة</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="service-cta-link" onclick="sendServiceWhatsApp('مواقع الشركات والأعمال')">
+                            <span>اطلب موقع شركة الآن</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </button>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card">
+                        <div>
+                            <span class="service-badge">للتجارة والمبيعات</span>
+                            <h3 class="service-title">المتاجر الإلكترونية المتكاملة</h3>
+                            <p class="service-desc">
+                                متجر إلكتروني قوي ومريح وسهل الاستخدام، يعرض منتجاتك بسلاسة مع إدارة سهلة للطلبات وتجربة شراء ممتعة.
+                            </p>
+                            <ul class="service-features-list">
+                                <li>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span>كتالوج منتجات تفاعلي مع فلاتر وبحث سريع</span>
+                                </li>
+                                <li>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span>سلة مشتريات سلسة وحجز فوري عبر الواتساب</span>
+                                </li>
+                                <li>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span>ربط بوابات الدفع الإلكتروني والشحن</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="service-cta-link" onclick="sendServiceWhatsApp('المتاجر الإلكترونية')">
+                            <span>اطلب متجرك الإلكتروني الآن</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </button>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card">
+                        <div>
+                            <span class="service-badge">للحملات والتسويق</span>
+                            <h3 class="service-title">صفحات الهبوط الإعلانية (Landing Pages)</h3>
+                            <p class="service-desc">
+                                صفحات هبوط مخصصة وموجهة لرفع معدل التحويل (Conversion Rate) وتحقيق أعلى عائد من حملاتك الإعلانية.
+                            </p>
+                            <ul class="service-features-list">
+                                <li>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span>سرعة تحميل خارقة لتقليل خسارة الزوار</span>
+                                </li>
+                                <li>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span>دعوات واضحة لاتخاذ إجراء (CTA) جذابة</span>
+                                </li>
+                                <li>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span>تكامل مع بكسل فيسبوك، تيك توك، وتحليلات جوجل</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="service-cta-link" onclick="sendServiceWhatsApp('صفحات الهبوط الإعلانية')">
+                            <span>اطلب صفحة هبوط الآن</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </button>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="service-card">
+                        <div>
+                            <span class="service-badge">التحديث والتطوير</span>
+                            <h3 class="service-title">تسريع وتحديث المواقع القائمة</h3>
+                            <p class="service-desc">
+                                هل لديك موقع قديم أو بطيء؟ نقوم بإعادة بناء واجهاته وتحسين كفاءته وسرعته وحمايته بأحدث التقنيات.
+                            </p>
+                            <ul class="service-features-list">
+                                <li>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span>تحسين درجات Google PageSpeed إلى 95+</span>
+                                </li>
+                                <li>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span>تحديث التصميم ليواكب أحدث صيحات UI/UX</span>
+                                </li>
+                                <li>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span>معالجة الأخطاء البرمجية وثغرات الأمان</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="service-cta-link" onclick="sendServiceWhatsApp('تحديث وتسريع موقع قائم')">
+                            <span>اطلب فحص وتحديث موقعك</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Showcase Section -->
+        <section class="portfolio-section" id="portfolio">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag">
+                        <span class="dot"></span>
+                        <span>معرض أعمالنا</span>
+                    </div>
+                    <h2 class="section-title">مشاريع حية نفخر بإنجازها</h2>
+                    <p class="section-subtitle">
+                        نظرة سريعة على بعض المواقع التي قمنا بتصميمها وتطويرها وإطلاقها لعملائنا الكرام.
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: El Sadat School -->
+                    <div class="project-card">
+                        <div class="project-thumb">
+                            <img src="Screenshot 2026-05-18 142209.png" alt="موقع مدرسة السادات بنين" loading="lazy">
+                            <div class="project-overlay">
+                                <span class="project-tag">مؤسسات تعليمية</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div>
+                                <h3 class="project-title">موقع مدرسة السادات بنين</h3>
+                                <p class="project-desc">
+                                    منصة رقمية شاملة لإدارة شؤون المدرسة والطلاب، تصميم تفاعلي عصري وسهل التصفح للمعلومات والجداول.
+                                </p>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://el-sadat-school.vercel.app/" target="_blank" rel="noopener noreferrer" class="live-link">
+                                    <span>زيارة الموقع الحي</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </a>
+                                <span style="font-size: 0.8rem; color: var(--gold-400);">Vercel Live ✓</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: iPhone Apple Store -->
+                    <div class="project-card">
+                        <div class="project-thumb">
+                            <img src="Screenshot 2026-05-18 142635.png" alt="موقع شركة iPhone Apple" loading="lazy">
+                            <div class="project-overlay">
+                                <span class="project-tag">معارض تقنية</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div>
+                                <h3 class="project-title">موقع شركة iPhone Apple</h3>
+                                <p class="project-desc">
+                                    واجهة عرض فاخرة لعرض منتجات Apple مع مواصفات الأجهزة وتأثيرات بصرية راقية بأسلوب شركة أبل العالمية.
+                                </p>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://i-phone-apple.vercel.app/" target="_blank" rel="noopener noreferrer" class="live-link">
+                                    <span>زيارة الموقع الحي</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </a>
+                                <span style="font-size: 0.8rem; color: var(--gold-400);">Vercel Live ✓</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: PUBG Gaming Store -->
+                    <div class="project-card">
+                        <div class="project-thumb">
+                            <img src="Screenshot 2026-05-18 142606.png" alt="متجر شحن ببجي والألعاب" loading="lazy">
+                            <div class="project-overlay">
+                                <span class="project-tag">متاجر إلكترونية</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div>
+                                <h3 class="project-title">متجر شحن ألعاب وببجي</h3>
+                                <p class="project-desc">
+                                    متجر إلكتروني سريع ومتخصص لشحن شدات الألعاب مع واجهة سهلة وتكامل للشراء والتواصل الفوري مع الزبائن.
+                                </p>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://el-bakre-store.vercel.app/" target="_blank" rel="noopener noreferrer" class="live-link">
+                                    <span>زيارة الموقع الحي</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </a>
+                                <span style="font-size: 0.8rem; color: var(--gold-400);">Vercel Live ✓</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center;">
+                    <a href="m.html" class="btn btn-outline" style="padding: 12px 32px;">
+                        <span>📂 تصفح كافة المشاريع ومعرض الصور الكامل</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Process Section -->
+        <section class="process-section" id="process">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag">
+                        <span class="dot"></span>
+                        <span>منهجية العمل</span>
+                    </div>
+                    <h2 class="section-title">كيف نبني موقعك خطوة بخطوة؟</h2>
+                    <p class="section-subtitle">
+                        عملية منظمة وواضحة تضمن استلام موقعك بأعلى جودة وفي الموعد المتفق عليه تماماً.
+                    </p>
+                </div>
+
+                <div class="process-grid">
+                    <div class="process-card">
+                        <span class="process-number">01</span>
+                        <div class="process-icon">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+                        <h3>الاستشارة والتخطيط</h3>
+                        <p>نستمع لأفكارك ومتطلباتك، ونحدد طبيعة المحتوى والصفحات والخصائص التقنية المناسبة لمشروعك.</p>
+                    </div>
+
+                    <div class="process-card">
+                        <span class="process-number">02</span>
+                        <div class="process-icon">
+                            <i class="fa-solid fa-pen-ruler"></i>
+                        </div>
+                        <h3>التصميم وتجربة المستخدم</h3>
+                        <p>نبتكر نموذج تصميم عصري وجذاب متوافق مع هويتك، ونشاركه معك لاعتماده وإبداء أي ملاحظات.</p>
+                    </div>
+
+                    <div class="process-card">
+                        <span class="process-number">03</span>
+                        <div class="process-icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3>البرمجة والتطوير</h3>
+                        <p>نحوّل التصميم إلى كود برمجي فائق السرعة، متوافق مع كافة مقاسات الشاشات ومعايير الأمان ومحركات البحث.</p>
+                    </div>
+
+                    <div class="process-card">
+                        <span class="process-number">04</span>
+                        <div class="process-icon">
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+                        <h3>الاختبار والإطلاق</h3>
+                        <p>نقوم بفحص شامل للموقع على كافة المتصفحات والهواتف ثم إطلاقه رسمياً على استضافة سريعة وتدريبك عليه.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Project Inquirer Widget -->
+        <section class="order-section" id="order">
+            <div class="container">
+                <div class="order-box">
+                    <div class="order-grid">
+                        <div class="order-info">
+                            <div class="section-tag">
+                                <span class="dot"></span>
+                                <span>طلب استشارة أو عرض سعر</span>
+                            </div>
+                            <h2>جاهز لبدء رحلتك الرقمية؟</h2>
+                            <p>
+                                حدد نوع الموقع الذي تطمح إليه وشاركنا تفاصيلك لنبدأ في تحويل فكرتك إلى واقع بأفضل تكلفة وأعلى معايير الإتقان.
+                            </p>
+                            <div class="order-perks">
+                                <div class="order-perk-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span>استشارة تقنية مجانية 100% دون أي التزام</span>
+                                </div>
+                                <div class="order-perk-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span>تسليم سريع في الموعد المحدد مع ضمان الجودة</span>
+                                </div>
+                                <div class="order-perk-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span>إشراف فني معتمد من أكاديمية GC School</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-form">
+                            <form onsubmit="submitOrderForm(event)">
+                                <div class="form-group">
+                                    <label for="order-site-type">نوع الموقع المطلوب</label>
+                                    <select id="order-site-type" class="form-select">
+                                        <option value="موقع شركة أو مؤسسة رسمي">موقع شركة أو مؤسسة رسمي</option>
+                                        <option value="متجر إلكتروني لبيع المنتجات">متجر إلكتروني لبيع المنتجات</option>
+                                        <option value="صفحة هبوط إعلانية (Landing Page)">صفحة هبوط إعلانية (Landing Page)</option>
+                                        <option value="موقع شخصي أو بورتفوليو">موقع شخصي أو معرض أعمال (Portfolio)</option>
+                                        <option value="تطوير وتسريع موقع قائم">تطوير وتسريع موقع قائم</option>
+                                        <option value="فكرة مخصصة أخرى">فكرة برمجية مخصصة</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="order-name">اسمك الكريم</label>
+                                    <input type="text" id="order-name" class="form-input" placeholder="مثال: محمد أحمد" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="order-notes">نبذة مختصرة عن فكرتك أو متطلباتك</label>
+                                    <input type="text" id="order-notes" class="form-input" placeholder="مثال: أحتاج موقع لمحل عطور بربط واتساب">
+                                </div>
+
+                                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px;">
+                                    <span>إرسال الطلب ومناقشة التفاصيل عبر واتساب 💬</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Client Testimonials Section -->
+        <section class="reviews-section" id="reviews">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag">
+                        <span class="dot"></span>
+                        <span>آراء العملاء</span>
+                    </div>
+                    <h2 class="section-title">ماذا يقول شركاء النجاح عنّا؟</h2>
+                    <p class="section-subtitle">
+                        ثقة عملائنا هي أثمن ما نملك، ورضاهم هو المقياس الحقيقي لنجاحنا.
+                    </p>
+                </div>
+
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div>
+                            <div class="review-stars">★★★★★</div>
+                            <p class="review-text">
+                                "تجربة ممتازة واحترافية من الدرجة الأولى. أدهم صمم موقع مدرستنا بدقة عالية وسرعة مذهلة، وكل التعديلات تم تنفيذها برحابة صدر ودقة متناهية."
+                            </p>
+                        </div>
+                        <div class="reviewer-meta">
+                            <div class="reviewer-avatar">أ</div>
+                            <div>
+                                <div class="reviewer-name">أ. أحمد الشربيني</div>
+                                <div class="reviewer-role">إدارة تعليمية - مدرسة السادات</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div>
+                            <div class="review-stars">★★★★★</div>
+                            <p class="review-text">
+                                "تصميم المتجر فاق كل توقعاتي، السرعة ممتازة على الموبايل وتجربة طلب العملاء عبر الواتساب أدت لزيادة ملحوظة في مبيعاتنا اليومية."
+                            </p>
+                        </div>
+                        <div class="reviewer-meta">
+                            <div class="reviewer-avatar">م</div>
+                            <div>
+                                <div class="reviewer-name">م. محمد البكري</div>
+                                <div class="reviewer-role">مؤسس متجر ألعاب رقمية</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div>
+                            <div class="review-stars">★★★★★</div>
+                            <p class="review-text">
+                                "التزام بالموعد، ذوق رفيع في اختيار الألوان والخطوط، ودعم فني متواصل حتى بعد التسليم. أنصح أي صاحب نشاط تجاري بالتعامل مع أدهم فوراً."
+                            </p>
+                        </div>
+                        <div class="reviewer-meta">
+                            <div class="reviewer-avatar">س</div>
+                            <div>
+                                <div class="reviewer-name">د. سامح عبد الرازق</div>
+                                <div class="reviewer-role">رائد أعمال وتقني</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section" id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag">
+                        <span class="dot"></span>
+                        <span>الأسئلة الشائعة</span>
+                    </div>
+                    <h2 class="section-title">إجابات على أكثر ما يدور في ذهنك</h2>
+                    <p class="section-subtitle">
+                        إليك إجابات واضحة ومباشرة عن كافة الأسئلة الشائعة قبل بدء مشروعك.
+                    </p>
+                </div>
+
+                <div class="faq-accordion">
+                    <div class="faq-item active">
+                        <div class="faq-question">
+                            <span>كم يستغرق وقت تصميم وتطوير الموقع؟</span>
+                            <span class="faq-chevron">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            يعتمد الوقت على حجم المشروع ومتطلباته؛ صفحات الهبوط البسيطة تستغرق عادة من 3 إلى 5 أيام عمل، بينما المواقع التعريفية المتكاملة والمتاجر تستغرق من 7 إلى 14 يوم عمل مع المراجعات المستمرة.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>هل سيكون موقعي متوافقاً مع الهواتف الذكية؟</span>
+                            <span class="faq-chevron">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            بكل تأكيد! نعتمد منهجية "Mobile-First" في التصميم، مما يضمن أن يظهر موقعك بشكل رائع وسلس على هواتف الآيفون، الأندرويد، الأجهزة اللوحية، والشاشات المكتبية.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>هل تقدم استضافة واسم نطاق (Domain) للموقع؟</span>
+                            <span class="faq-chevron">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            نعم، نساعدك في حجز الدومين المناسب وضبط الاستضافة السحابية الآمنة (Cloud Hosting) مجاناً أو بأسعار رمزية تضمن بقاء موقعك متصلاً بنسبة 99.9% وبسرعة فائقة.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>كيف يتم الدفع والتعاقد؟</span>
+                            <span class="faq-chevron">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            يتم دفع دفعة أولى مقدمة (عربون) عند الاتفاق لبدء التصميم والبرمجة، ويسدد المتبقي بعد مراجعتك الكاملة للموقع ورضاك التام عنه قبل الإطلاق النهائي، مع خيارات دفع متعددة (فودافون كاش، إنستاباي، تحويل بنكي).
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>هل توفرون دعماً فنياً وتعديلات بعد استلام الموقع؟</span>
+                            <span class="faq-chevron">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            نعم، نمنحك فترة دعم فني وصيانة مجانية بعد التسليم لمعالجة أي استفسار أو إجراء تعديلات طفيفة، كما نقدم باقات صيانة دورية طويلة الأمد لراحتك.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Banner -->
+        <section class="cta-banner-section" id="contact">
+            <div class="container">
+                <div class="cta-banner">
+                    <h2>جاهز لتحويل رؤيتك إلى نجاح رقمي ملموس؟</h2>
+                    <p>
+                        لا تؤجل خطوتك القادمة. تواصل معنا الآن واحصل على استشارة مجانية وعرض سعر يناسب ميزانيتك وطموحك.
+                    </p>
+                    <div class="cta-banner-actions">
+                        <button class="btn btn-primary" onclick="sendWhatsApp6()">
+                            <span>💬 ابدأ الآن عبر واتساب (01013984024)</span>
+                        </button>
+                        <a href="tel:01013984024" class="btn btn-outline">
+                            <span>📞 اتصال هاتفي مباشر</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <a href="#hero" class="brand-logo" style="margin-bottom: 10px;">
+                        <div class="logo-icon"><img style="width: 100px; height: 100%; border-radius: 13px; object-fit: contain;" src="Adham web.png" alt="شعار Adham"></div>
+                        <div class="logo-text">
+                            <span class="logo-title">Adham</span>
+                            <span class="logo-sub">لتطوير المواقع</span>
+                        </div>
+                    </a>
+                    <p>
+                        شريكك المتخصص في بناء واجهات الويب الحديثة وحلول التجارة الإلكترونية عالية الأداء، بإشراف وتوجيه أكاديمية 
+                        <a href="https://www.gcschool.tech/" target="_blank" rel="noopener noreferrer" style="color: var(--gold-400); font-weight: 700;">GC School</a>.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="#hero">الرئيسية</a></li>
+                        <li><a href="#features">لماذا نحن؟</a></li>
+                        <li><a href="#services">خدماتنا</a></li>
+                        <li><a href="#portfolio">أعمالنا</a></li>
+                        <li><a href="m.html">معرض الأعمال الشامل</a></li>
+                        <li><a href="#faq">الأسئلة الشائعة</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>خدماتنا</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">مواقع الشركات</a></li>
+                        <li><a href="#services">المتاجر الإلكترونية</a></li>
+                        <li><a href="#services">صفحات الهبوط الإعلانية</a></li>
+                        <li><a href="#services">تسريع وتحديث المواقع</a></li>
+                        <li><a href="#services">تصميم تجربة المستخدم UI/UX</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>تواصل معنا</h4>
+                    <div class="footer-contact-info">
+                        <div class="contact-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <span>مصر - محافظة الدقهلية - مركز السنبلاوين (ديو الوسطى)</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            <span dir="ltr">01013984024</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                            <a href="https://www.gcschool.tech/" target="_blank" rel="noopener noreferrer">أكاديمية GC School</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>
+                    جميع الحقوق محفوظة © 2026 <strong>Adham</strong> — تم التطوير بكل إتقان واحترافية.
+                </div>
+                <div>
+                    إشراف ودعم تقني: <a href="https://www.gcschool.tech/" target="_blank" rel="noopener noreferrer">GC School Academy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/201013984024?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%A3%D8%AF%D9%87%D9%85%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%88%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D9%85%D9%88%D9%82%D8%B9%20%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A"
+        class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="تواصل عبر الواتساب">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+        </svg>
+        <span>تواصل معنا عبر واتساب</span>
+    </a>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="back-to-top" aria-label="الرجوع للأعلى">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
     </div>
-     <div class="cas" >
-     <li class="hyt" onclick="sendWhatsApp6()">اطلب الان</li>
-     </div>
-     
-     </ul>
-    </nav>
-</header>
-<br id="we">
-<br>
-<section  class="rer">
-<p class="font">تصميم احترافي . برمجه حديثه . أداء عالي</p>
-<h1 class="e">نحول أفكــــــار ك الي</h1>
-<h1 class="m"><span style="color: #c9a84c;">موقعك الالكتروني</span> الاحترافي</h1>
-<div class="u">
-<p class="j">نساعدك على امتلاك موقع يعكس هويتك، يجذب عملائك
-</p>
-<p class="g">ويحقق أهدافك بأعلى جودة وأفضل سعر.</p>
-<p class="g">أدهم لإنشاء المواقع</p>
-</div>
-<center>
-<div class="l">
 
-
-<p  class="ws"onclick="sendWhatsApp()">تواصل معنا</p>
-<p class="uo"onclick="sendWhatsApp6()">طلب موقعك الان</p>
-</div></center>
-</section>
-<br>
-<br>
-<br>
-<h3 class="ops">لماذا تخطارنا؟</h3>
-<hr class="vo">
-<center>
-
-<section class="features">
-
-    <div class="box">
-        <h2>سرعة وأداء عالي</h2>
-        <p>مواقع سريعة التحميل وتجربة ممتازة</p>
-    </div>
-
-    <div class="box">
-        <h2>تصميم متجاوب</h2>
-        <p>متوافق مع جميع الأجهزة والشاشات</p>
-    </div>
-
-    <div class="box">
-        <h2>أمان وحماية</h2>
-        <p>حماية قوية لموقعك وبياناتك</p>
-    </div>
-
-
-</section>
-<br>
-<br>
-<br>
-<div class="kok">
-<h2 class="vov">
-    جاهز لبناء موقعك الاحترافي؟
-</h2>
-<p class="llk">تواصل معنا الان وابدا رحلتك الرقميه مع فريق متخصص</p>
-<div class="jjh" id="u" onclick="sendWhatsApp9()">ابدا الان عبر الواتساب</div>
-</div>
-</center>
-
-<footer>
-    <p class="qaz" >جميع الحقوق محفوظة — Adham 2025 <sup> ©</sup></p>
-</footer>
-
-<script src="ht.js"></script>
+    <!-- JavaScript -->
+    <script src="ht.js"></script>
 </body>
+
 </html>
